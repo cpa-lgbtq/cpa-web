@@ -13,25 +13,17 @@
         text-align: center;
       }
       header {
-        display: flex;
         background-color: #4caf50;
         color: white;
         padding: 20px;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
       }
-      .logo{
-        padding-left: 100px;
-        padding-right: 100px;
+      .logo {
         width: 100px;
+        margin: 0 auto;
       }
       h1 {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
+        margin: 10px 0 0;
       }
-  
       .call-to-action {
         margin: 20px 0;
         font-size: 1.2em;
@@ -53,57 +45,58 @@
         font-weight: bold;
       }
       ul {
-            list-style-type: none; /* Remove default list markers */
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove margin */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        text-align: center;
+        margin: 10px 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 20px;
+      }
+      .image {
+        max-width: 100%;
+        margin: 20px 0;
+      }
+      @media (max-width: 600px) {
+        .content-image {
+          max-width: 100%;
+          margin: 20px 0;
         }
-        li {
-          text-align: center;
-            white-space: nowrap; /* Prevent text wrapping */
-            overflow: hidden; /* Hide overflow */
-            text-overflow: clip; /* Remove ellipses on overflow */
-        }
-        .container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            min-height: 500px;
-            padding: 20px;
-        }
-        .content {
-            flex: 1; /* Takes up remaining space */
-            padding: 20px;
-        }
-        .image {
-            flex: 0 0 300px; /* Fixed width for the image */
-            max-width: 100%; /* Responsive */
-        }
-
+      }
     </style>
   </head>
   <body>
     <header>
-      <img class="logo" src="https://imgs.search.brave.com/7CtzeIPj2Ev6R597nVu98NraFMzRaa4qXo7_S515rWc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8wLzBmL1Nl/YWxfb2ZfQ2FsaWZv/cm5pYS5zdmcvNTEy/cHgtU2VhbF9vZl9D/YWxpZm9ybmlhLnN2/Zy5wbmc" alt="Description of the image" width="500">
-
+      <img
+        class="logo"
+        src="https://imgs.search.brave.com/7CtzeIPj2Ev6R597nVu98NraFMzRaa4qXo7_S515rWc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8wLzBmL1Nl/YWxfb2ZfQ2FsaWZv/cm5pYS5zdmcvNTEy/cHgtU2VhbF9vZl9D/YWxpZm9ybmlhLnN2/Zy5wbmc"
+        alt="Child Protective Alliance Logo"
+      />
       <h1>Child Protective Alliance</h1>
     </header>
 
     <div class="content">
       <p>LGBT - Activating For Teenagers Being Who They Are</p>
-
       <p class="call-to-action">
         Contact us at:
         <span style="color: #4caf50"
-        
-            <a href="tel:+13239405008">+1 (323) 940-5008</a>
-     
-        </span>
+          ><a href="tel:+13239405008">+1 (323) 940-5008</a></span
+        >
       </p>
-
-     
-
     </div>
-    
+
     <div class="container">
       <div class="content">
         <h2>Resources Available:</h2>
@@ -116,9 +109,13 @@
         </ul>
       </div>
       <div class="image">
-          <img src="https://lalgbtcenter.org/app/themes/la-lgbt/images/la-lgbt-footer-logo.webp" alt="Nature Image">
+        <img
+          class="content-image"
+          src="https://lalgbtcenter.org/app/themes/la-lgbt/images/la-lgbt-footer-logo.webp"
+          alt="LA LGBT Center Logo"
+        />
       </div>
-  </div>
+    </div>
 
     <footer>
       <p>&copy; 2024 Child Protective Alliance (CPA)</p>
